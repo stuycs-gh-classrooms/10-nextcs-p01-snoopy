@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2bl0h1Mb)
 # NeXtCS Project 01
-### Name0: YOUR NAME HERE
-### Name1: TEAMMATE NAME HERE (delete line if working solo)
+### Name0: Sarah Yu
+### Name1: Michelle Ye
 ---
 
 ### Overview
@@ -17,49 +17,83 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Breakout
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+- Bouncing ball
+- Collision check
+- The paddle
+- Array of bricks that disappear when hit
+- A point system
+- Lives
+- Play/pause
+- Reset
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+- Powerups (double balls, slower ball, longer paddle)
+- Colored bricks
+- Control paddle with arrow/wasd keys
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+
 
 2D Array:
-- YOUR ANSWER HERE
+- Bricks
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- Space (play/pause)
+- r for reset 
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: mouseX
+- Mouse pressed: 
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Ball
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - int center.x
+  - int center.y
+  - int bsize
+  - int xspeed
+  - int yspeed
 - METHODS
-  - LIST METHODS HERE
+  - Display
+  - Move
+  - Bounce
+  - Collision check
 
-CLASS NAME1
+Paddle
+- Instance variables:
+  - int x
+  - int y
+- METHODS
+  - Display
+  - Move
+  - Collision check
+
+Bricks
+- Instance variables:
+  - int x
+  - int y
+- METHODS
+  - Display
+  - Collision check
+ 
+Brick grid
 - Instance variables:
   - LIST INSTANCE VARS HERE
 - METHODS
