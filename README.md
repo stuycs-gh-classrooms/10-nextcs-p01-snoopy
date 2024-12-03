@@ -35,6 +35,7 @@ What are the core features that your program should have? These should be things
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
 - Powerups (double balls, slower ball, longer paddle)
+- Control the ball speed
 - Rainbow bricks
 - Custom ball with a complex shape
 - Control paddle with arrow/wasd keys
@@ -74,7 +75,6 @@ Ball
   - void Display
   - void Move
   - void Bounce
-  - boolean Collision check
   - void Pause to pause the motion of the ball
   - void Reset to reset the position of the ball
 
@@ -83,7 +83,7 @@ Paddle
   - PVector corner
 - METHODS
   - void Display
-  - void Move
+  - void Move (see Tile lab)
   - boolean Collision check
 
 Bricks
@@ -91,6 +91,7 @@ Bricks
   - PVector corner
 - METHODS
   - void Display
+  - void Disappear to remove a brick when it is hit
   - boolean Collision check
  
 Brick grid
@@ -99,6 +100,4 @@ Brick grid
   - int brickSize
 - METHODS
   - void Display
-  - boolean Collision check
-  - void Disappear to remove a brick when it is hit
-  - void Reset to reset the bricks
+  - void Reset to reset the bricks (would it be possible to call display again on the grid to make it reset?)
