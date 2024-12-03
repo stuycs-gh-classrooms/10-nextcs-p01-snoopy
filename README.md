@@ -55,11 +55,12 @@ How will your program be controlled? List all keyboard commands and mouse intera
 
 Keyboard Commands:
 - Space (play/pause)
-- r for reset 
+- r for reset
+- Optional: f to make the ball faster, s to make the ball slower
 
 Mouse Control:
 - Mouse movement: mouseX
-- Mouse pressed: 
+- Mouse pressed: possibly click for play/pause instead of using space
 
 
 ### Classes
