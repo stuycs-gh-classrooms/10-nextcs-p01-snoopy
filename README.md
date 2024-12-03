@@ -26,7 +26,7 @@ What are the core features that your program should have? These should be things
 - Collision check
 - The paddle
 - Array of bricks that disappear when hit
-- A point system
+- Score
 - Lives
 - Play/pause
 - Reset
@@ -35,17 +35,18 @@ What are the core features that your program should have? These should be things
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
 - Powerups (double balls, slower ball, longer paddle)
-- Colored bricks
+- Rainbow bricks
+- Custom ball with a complex shape
 - Control paddle with arrow/wasd keys
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-
+- Potentially can create one row of reinforced bricks at the very top of the screen
 
 2D Array:
-- Bricks
+- Other rows of bricks
 
 
 ### Controls
@@ -65,36 +66,39 @@ What classes will you be creating for this project? Include the instance variabl
 
 Ball
 - Instance variables:
-  - int center.x
-  - int center.y
+  - PVector center
   - int bsize
   - int xspeed
   - int yspeed
 - METHODS
-  - Display
-  - Move
-  - Bounce
-  - Collision check
+  - void Display
+  - void Move
+  - void Bounce
+  - boolean Collision check
+  - void Pause to pause the motion of the ball
+  - void Reset to reset the position of the ball
 
 Paddle
 - Instance variables:
-  - int x
-  - int y
+  - PVector corner
 - METHODS
-  - Display
-  - Move
-  - Collision check
+  - void Display
+  - void Move
+  - boolean Collision check
 
 Bricks
 - Instance variables:
-  - int x
-  - int y
+  - PVector corner
 - METHODS
-  - Display
-  - Collision check
+  - void Display
+  - boolean Collision check
  
 Brick grid
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - Brick[][] grid
+  - int brickSize
 - METHODS
-  - LIST METHODS HERE
+  - void Display
+  - boolean Collision check
+  - void Disappear to remove a brick when it is hit
+  - void Reset to reset the bricks
