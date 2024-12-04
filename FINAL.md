@@ -1,7 +1,7 @@
 # NeXtCS Project 01
-### Period:  
-### Name0: YOUR NAME HERE
-### Name1: TEAMMATE NAME HERE (delete if working solo)
+### Period: 10
+### Name0: Sarah Yu
+### Name1: Michelle Ye
 #### Selected Game: YOUR GAME HERE
 ---
 
