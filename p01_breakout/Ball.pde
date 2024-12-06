@@ -6,16 +6,17 @@ class Ball {
   int yspeed;
   int bsize;
   color c;
+  boolean moving;
 
-   //default constructor
-   Ball(PVector p, int s) {
-     bsize = s;
-     center = new PVector(p.x, p.y);
-   }
+  //default constructor
+  Ball(PVector p, int s) {
+    bsize = s;
+    center = new PVector(p.x, p.y);
+  }
 
   boolean collisionCheck(Ball other) {
     return ( this.center.dist(other.center)
-             <= (this.bsize/2 + other.bsize/2) );
+      <= (this.bsize/2 + other.bsize/2) );
   }//collisionCheck
 
   void setColor(color newC) {
@@ -30,18 +31,19 @@ class Ball {
 
   //movement behavior
   void move() {
-    if (center.y >= height - bsize/2 ||
+    if (moving) {
+      if (center.y >= height - bsize/2 ||
         center.y <= bsize/2) {
         yspeed *= -1;
-    }//up/down bounce
+      }//up/down bounce
 
-    if (center.x >= width - bsize/2 ||
+      if (center.x >= width - bsize/2 ||
         center.x <= bsize/2) {
         xspeed *= -1;
-    }//left/right bounce
+      }//left/right bounce
 
-    center.y+= yspeed;
-    center.x+= xspeed;
+      center.y+= yspeed;
+      center.x+= xspeed;
+    }
   }//move
-
 }//Ball
