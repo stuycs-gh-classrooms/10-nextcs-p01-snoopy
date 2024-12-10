@@ -2,6 +2,9 @@
 # NeXtCS Project 01
 ### Name0: Sarah Yu
 ### Name1: Michelle Ye
+### Notes for later
+- whenever you press reset for the first time the score jumps back to the left of the screen for some reason
+- the ball is bouncing off the bottom of the screen
 ---
 
 ### Overview
