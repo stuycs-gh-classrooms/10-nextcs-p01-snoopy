@@ -14,7 +14,7 @@ void setup() {
   brickHeight = 20;
   
   // Initialize game objects
-  paddle = new Paddle(width / 2 - 50, height - 30, 100, 10); //creates the paddle corresponding to the width and height.
+  paddle = new Paddle(width / 2 - 50, height - 80, 100, 10); //creates the paddle corresponding to the width and height.
   // more documention in the paddle class tab.
   ball = new Ball(new PVector(width / 2, height / 2), 15); // calls a ball with the specified PVector and size of 15.
   // more documention in the ball class tab.
@@ -39,7 +39,7 @@ void draw() {
   // Display score and lives
   fill(255);
   textSize(20);
-  text("Score: " + score, 10, 20);
+  text("Score: " + score, 40, 20);
   text("Lives: " + lives, width - 100, 20);
   
   if (lives <= 0) {
